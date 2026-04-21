@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fadhil — IoT · AI · DevOps Engineer</title>
+<meta name="description" content="Portfolio Fadhil — IoT Engineer, AI Web Builder, DevOps Engineer.">
+<meta property="og:title" content="Fadhil Portfolio">
+<meta property="og:description" content="Building intelligent systems — microcontrollers to cloud.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+ 
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="page-progress" id="pageProgress"></div>
+ 
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">F<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nl">Home</a></li>
+    <li><a href="#skills" class="nl">Skills</a></li>
+    <li><a href="#projects" class="nl">Projects</a></li>
+    <li><a href="#certs" class="nl">Certs</a></li>
+    <li><a href="#dashboard" class="nl">Dashboard</a></li>
+    <li><a href="#contact" class="nl">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeToggle"><i class="fas fa-sun" id="themeIcon"></i></button>
+    <button class="ham" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+ 
+<div class="mob-drawer" id="mobDrawer">
+  <ul>
+    <li><a href="#home" class="mob-link">Home</a></li>
+    <li><a href="#skills" class="mob-link">Skills</a></li>
+    <li><a href="#projects" class="mob-link">Projects</a></li>
+    <li><a href="#certs" class="mob-link">Certs</a></li>
+    <li><a href="#dashboard" class="mob-link">Dashboard</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+ 
+<!-- HERO -->
+<header id="home" class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-left">
+    <div class="hero-badge"><span class="hbdot"></span>Open to Work</div>
+    <h1 class="hero-name" id="heroName">FADHIL</h1>
+    <div class="hero-role"><span id="typingText"></span><span class="tcursor">_</span></div>
+    <p class="hero-sub">Building intelligent systems — from microcontrollers to the cloud. SMK engineer at the frontier of IoT, AI, and automated infrastructure.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-fill">View Projects <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs"><span class="hs-n">3+</span><span class="hs-l">Projects</span></div>
+      <div class="hs-sep"></div>
+      <div class="hs"><span class="hs-n">3</span><span class="hs-l">Domains</span></div>
+      <div class="hs-sep"></div>
+      <div class="hs"><span class="hs-n">∞</span><span class="hs-l">Curiosity</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="av-frame">
+      <div class="av-deco d1"></div>
+      <div class="av-deco d2"></div>
+      <div class="av-inner">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="av-svg">
+          <defs><clipPath id="ac"><circle cx="100" cy="100" r="88"/></clipPath></defs>
+          <circle cx="100" cy="100" r="100" fill="#FFE600"/>
+          <g clip-path="url(#ac)">
+            <circle cx="100" cy="82" r="34" fill="#111"/>
+            <ellipse cx="100" cy="162" rx="54" ry="46" fill="#111"/>
+            <circle cx="86" cy="78" r="4.5" fill="#FFE600"/>
+            <circle cx="114" cy="78" r="4.5" fill="#FFE600"/>
+            <path d="M88 96 Q100 107 112 96" stroke="#FFE600" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </g>
+          <circle cx="100" cy="100" r="88" fill="none" stroke="#000" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="chip c1"><i class="fas fa-microchip"></i> IoT</div>
+      <div class="chip c2"><i class="fas fa-brain"></i> AI</div>
+      <div class="chip c3"><i class="fas fa-layer-group"></i> DevOps</div>
+    </div>
+  </div>
+  <a href="#skills" class="scroll-dn"><i class="fas fa-chevron-down"></i></a>
+</header>
+ 
+<!-- SKILLS -->
+<section id="skills" class="sec skills-sec">
+  <div class="sec-eyebrow">— Expertise</div>
+  <h2 class="sec-h">My Skills</h2>
+  <div class="sk-grid">
+ 
+    <div class="sk-card" data-reveal>
+      <div class="sk-ico iot-c">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="28">
+          <rect x="14" y="14" width="16" height="16" rx="2" fill="currentColor"/>
+          <rect x="8" y="8" width="5" height="5" rx="1" fill="currentColor" opacity=".4"/>
+          <rect x="31" y="8" width="5" height="5" rx="1" fill="currentColor" opacity=".4"/>
+          <rect x="8" y="31" width="5" height="5" rx="1" fill="currentColor" opacity=".4"/>
+          <rect x="31" y="31" width="5" height="5" rx="1" fill="currentColor" opacity=".4"/>
+          <line x1="13" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+          <line x1="31" y1="10.5" x2="30" y2="14" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+          <line x1="13" y1="33.5" x2="14" y2="30" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+          <line x1="31" y1="33.5" x2="30" y2="30" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+          <circle cx="22" cy="22" r="3" fill="#FFE600"/>
+        </svg>
+      </div>
+      <h3>IoT Engineering</h3>
+      <p>Sensor networks, edge computing, MQTT pipelines, and embedded firmware for real-world automation systems.</p>
+      <div class="sk-tags"><span>ESP32</span><span>Arduino</span><span>MQTT</span><span>LoRa</span><span>RPi</span></div>
+    </div>
+ 
+    <div class="sk-card feat" data-reveal>
+      <div class="sk-ico ai-c">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="28">
+          <circle cx="22" cy="22" r="9" stroke="currentColor" stroke-width="2"/>
+          <circle cx="22" cy="22" r="3" fill="currentColor"/>
+          <line x1="22" y1="6" x2="22" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="22" y1="31" x2="22" y2="38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="6" y1="22" x2="13" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="31" y1="22" x2="38" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="10.5" y1="10.5" x2="15.5" y2="15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28.5" y1="28.5" x2="33.5" y2="33.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="33.5" y1="10.5" x2="28.5" y2="15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="15.5" y1="28.5" x2="10.5" y2="33.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>AI Web Builder</h3>
+      <p>LLM-powered apps, prompt engineering, intelligent UI generation, and full-stack AI product deployment at scale.</p>
+      <div class="sk-tags"><span>Python</span><span>FastAPI</span><span>LLM API</span><span>React</span><span>RAG</span></div>
+    </div>
+ 
+    <div class="sk-card" data-reveal>
+      <div class="sk-ico devops-c">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="28">
+          <rect x="4" y="6" width="36" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="4" y="20" width="36" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="4" y="34" width="36" height="6" rx="2" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+          <circle cx="36" cy="11" r="2" fill="currentColor"/>
+          <circle cx="36" cy="25" r="2" fill="#FFE600"/>
+          <circle cx="30" cy="11" r="2" fill="currentColor" opacity=".3"/>
+        </svg>
+      </div>
+      <h3>DevOps</h3>
+      <p>CI/CD pipelines, containerization, infrastructure-as-code, monitoring, and zero-downtime production deployments.</p>
+      <div class="sk-tags"><span>Docker</span><span>CI/CD</span><span>Nginx</span><span>Linux</span><span>GH Actions</span></div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects" class="sec proj-sec">
+  <div class="sec-eyebrow">— Portfolio</div>
+  <h2 class="sec-h">Projects</h2>
+  <div class="proj-grid">
+ 
+    <article class="proj-card" data-project="0" data-reveal>
+      <div class="proj-vis iot-vis">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0a0a"/>
+          <circle cx="200" cy="100" r="55" fill="none" stroke="#FFE600" stroke-width="1" stroke-dasharray="4 6" opacity=".4"/>
+          <circle cx="200" cy="100" r="35" fill="none" stroke="#FFE600" stroke-width="1.5" opacity=".7"/>
+          <circle cx="200" cy="100" r="9" fill="#FFE600"/>
+          <line x1="200" y1="45" x2="200" y2="65" stroke="#FFE600" stroke-width="1.5"/>
+          <line x1="255" y1="100" x2="235" y2="100" stroke="#FFE600" stroke-width="1.5"/>
+          <line x1="145" y1="100" x2="165" y2="100" stroke="#FFE600" stroke-width="1.5"/>
+          <line x1="200" y1="155" x2="200" y2="135" stroke="#FFE600" stroke-width="1.5"/>
+          <rect x="18" y="80" width="56" height="40" rx="4" fill="none" stroke="#FFE600" stroke-width="1" opacity=".5"/>
+          <text x="46" y="103" fill="#FFE600" font-size="7.5" text-anchor="middle" font-family="monospace">SENSOR</text>
+          <rect x="326" y="80" width="56" height="40" rx="4" fill="none" stroke="#FFE600" stroke-width="1" opacity=".5"/>
+          <text x="354" y="103" fill="#FFE600" font-size="7.5" text-anchor="middle" font-family="monospace">CLOUD</text>
+          <line x1="74" y1="100" x2="145" y2="100" stroke="#FFE600" stroke-width="1" stroke-dasharray="4 3" opacity=".4"/>
+          <line x1="255" y1="100" x2="326" y2="100" stroke="#FFE600" stroke-width="1" stroke-dasharray="4 3" opacity=".4"/>
+          <text x="200" y="185" fill="#FFE600" font-size="8" text-anchor="middle" font-family="monospace" opacity=".5">SMART FARMING — MQTT NETWORK</text>
+        </svg>
+        <div class="proj-ovr"><span>View Details <i class="fas fa-arrow-right"></i></span></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta"><span class="pnum">01</span><span class="pcat">IoT</span></div>
+        <h3>Smart Farming IoT</h3>
+        <p>Real-time farm monitoring — soil, temperature, humidity via MQTT cloud dashboard with auto-irrigation.</p>
+        <div class="p-stack"><span>ESP32</span><span>MQTT</span><span>Node-RED</span><span>InfluxDB</span></div>
+      </div>
+    </article>
+ 
+    <article class="proj-card" data-project="1" data-reveal>
+      <div class="proj-vis ai-vis">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0a0a"/>
+          <rect x="28" y="28" width="155" height="144" rx="6" fill="none" stroke="#FFE600" stroke-width="1" opacity=".3"/>
+          <text x="46" y="55" fill="#FFE600" font-size="8.5" font-family="monospace" opacity=".7">$ ai-builder init</text>
+          <text x="46" y="72" fill="#fff" font-size="8.5" font-family="monospace" opacity=".45">✓ Parsing prompt...</text>
+          <text x="46" y="88" fill="#fff" font-size="8.5" font-family="monospace" opacity=".45">✓ Generating layout...</text>
+          <text x="46" y="104" fill="#FFE600" font-size="8.5" font-family="monospace" opacity=".85">▌ Building UI components</text>
+          <text x="46" y="120" fill="#fff" font-size="8.5" font-family="monospace" opacity=".35">✓ Optimizing assets...</text>
+          <rect x="216" y="28" width="157" height="144" rx="6" fill="none" stroke="#FFE600" stroke-width="1" opacity=".3"/>
+          <rect x="230" y="46" width="128" height="18" rx="3" fill="#FFE600" opacity=".12"/>
+          <rect x="230" y="74" width="88" height="7" rx="2" fill="#fff" opacity=".1"/>
+          <rect x="230" y="88" width="108" height="7" rx="2" fill="#fff" opacity=".1"/>
+          <rect x="230" y="102" width="68" height="7" rx="2" fill="#fff" opacity=".1"/>
+          <rect x="230" y="130" width="64" height="24" rx="4" fill="#FFE600" opacity=".75"/>
+          <text x="262" y="146" fill="#000" font-size="8" font-family="monospace" font-weight="bold">LAUNCH</text>
+          <text x="200" y="185" fill="#FFE600" font-size="8" text-anchor="middle" font-family="monospace" opacity=".5">AI WEBSITE BUILDER — PROMPT → CODE → DEPLOY</text>
+        </svg>
+        <div class="proj-ovr"><span>View Details <i class="fas fa-arrow-right"></i></span></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta"><span class="pnum">02</span><span class="pcat">AI</span></div>
+        <h3>AI Website Builder</h3>
+        <p>Prompt-to-website platform. Describe your idea, AI generates production-ready code instantly.</p>
+        <div class="p-stack"><span>Python</span><span>GPT-4</span><span>FastAPI</span><span>React</span></div>
+      </div>
+    </article>
+ 
+    <article class="proj-card" data-project="2" data-reveal>
+      <div class="proj-vis devops-vis">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#0a0a0a"/>
+          <circle cx="48" cy="100" r="20" fill="none" stroke="#FFE600" stroke-width="1.5" opacity=".8"/>
+          <text x="48" y="97" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">CODE</text>
+          <text x="48" y="107" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">PUSH</text>
+          <line x1="68" y1="100" x2="100" y2="100" stroke="#FFE600" stroke-width="1.5" opacity=".6"/>
+          <circle cx="120" cy="100" r="20" fill="none" stroke="#FFE600" stroke-width="1.5" opacity=".8"/>
+          <text x="120" y="97" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">BUILD</text>
+          <text x="120" y="107" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">TEST</text>
+          <line x1="140" y1="100" x2="172" y2="100" stroke="#FFE600" stroke-width="1.5" opacity=".6"/>
+          <circle cx="192" cy="100" r="22" fill="#FFE600" opacity=".1" stroke="#FFE600" stroke-width="2"/>
+          <text x="192" y="97" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">DOCKER</text>
+          <text x="192" y="107" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">IMAGE</text>
+          <line x1="214" y1="100" x2="246" y2="100" stroke="#FFE600" stroke-width="1.5" opacity=".6"/>
+          <circle cx="266" cy="100" r="20" fill="none" stroke="#FFE600" stroke-width="1.5" opacity=".8"/>
+          <text x="266" y="97" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">DEPLOY</text>
+          <text x="266" y="107" fill="#FFE600" font-size="6.5" text-anchor="middle" font-family="monospace">VPS</text>
+          <line x1="286" y1="100" x2="318" y2="100" stroke="#FFE600" stroke-width="1.5" opacity=".6"/>
+          <circle cx="350" cy="100" r="22" fill="#22c55e" opacity=".15" stroke="#22c55e" stroke-width="2"/>
+          <text x="350" y="97" fill="#22c55e" font-size="7" text-anchor="middle" font-family="monospace">LIVE</text>
+          <text x="350" y="107" fill="#22c55e" font-size="7" text-anchor="middle" font-family="monospace">✓</text>
+          <text x="200" y="185" fill="#FFE600" font-size="8" text-anchor="middle" font-family="monospace" opacity=".5">DEVOPS AUTOMATION — FULL CI/CD PIPELINE</text>
+        </svg>
+        <div class="proj-ovr"><span>View Details <i class="fas fa-arrow-right"></i></span></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta"><span class="pnum">03</span><span class="pcat">DevOps</span></div>
+        <h3>DevOps Automation</h3>
+        <p>Full CI/CD pipeline — zero-downtime deploy, Docker containers, Telegram alerting on failure.</p>
+        <div class="p-stack"><span>Docker</span><span>GitHub Actions</span><span>Nginx</span><span>Telegram</span></div>
+      </div>
+    </article>
+ 
+  </div>
+</section>
+ 
+<!-- CERTIFICATES -->
+<section id="certs" class="sec certs-sec">
+  <div class="sec-eyebrow">— Achievements</div>
+  <h2 class="sec-h">Certificates</h2>
+  <div class="cert-grid">
+ 
+    <div class="cert-card" data-reveal>
+      <div class="cert-vis">
+        <svg viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="170" rx="6" fill="#0a0a0a"/>
+          <rect x="1.5" y="1.5" width="317" height="167" rx="5" fill="none" stroke="#FFE600" stroke-width="1.5"/>
+          <rect x="10" y="10" width="300" height="150" rx="3" fill="none" stroke="#FFE600" stroke-width=".4" opacity=".3"/>
+          <text x="160" y="40" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".55">CERTIFICATE OF COMPLETION</text>
+          <text x="160" y="72" fill="#fff" font-size="17" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="700">IoT Fundamentals</text>
+          <text x="160" y="95" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".65">Cisco Networking Academy</text>
+          <line x1="50" y1="114" x2="270" y2="114" stroke="#FFE600" stroke-width=".5" opacity=".3"/>
+          <text x="160" y="134" fill="#fff" font-size="8.5" text-anchor="middle" font-family="monospace" opacity=".45">Fadhil — 2025</text>
+          <circle cx="36" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="36" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+          <circle cx="284" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="284" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+        </svg>
+      </div>
+      <div class="cert-body">
+        <div class="cert-meta"><i class="fas fa-award"></i> Cisco Networking Academy</div>
+        <h4>IoT Fundamentals</h4>
+        <p>Connecting Things — sensor-to-cloud architecture, protocols &amp; security.</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card" data-reveal>
+      <div class="cert-vis">
+        <svg viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="170" rx="6" fill="#0a0a0a"/>
+          <rect x="1.5" y="1.5" width="317" height="167" rx="5" fill="none" stroke="#FFE600" stroke-width="1.5"/>
+          <rect x="10" y="10" width="300" height="150" rx="3" fill="none" stroke="#FFE600" stroke-width=".4" opacity=".3"/>
+          <text x="160" y="40" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".55">CERTIFICATE OF COMPLETION</text>
+          <text x="160" y="72" fill="#fff" font-size="17" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="700">Linux Essentials</text>
+          <text x="160" y="95" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".65">Linux Professional Institute (LPI)</text>
+          <line x1="50" y1="114" x2="270" y2="114" stroke="#FFE600" stroke-width=".5" opacity=".3"/>
+          <text x="160" y="134" fill="#fff" font-size="8.5" text-anchor="middle" font-family="monospace" opacity=".45">Fadhil — 2025</text>
+          <circle cx="36" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="36" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+          <circle cx="284" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="284" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+        </svg>
+      </div>
+      <div class="cert-body">
+        <div class="cert-meta"><i class="fab fa-linux"></i> Linux Professional Institute</div>
+        <h4>Linux Essentials</h4>
+        <p>Command line mastery, file systems, processes &amp; server administration.</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card" data-reveal>
+      <div class="cert-vis">
+        <svg viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="170" rx="6" fill="#0a0a0a"/>
+          <rect x="1.5" y="1.5" width="317" height="167" rx="5" fill="none" stroke="#FFE600" stroke-width="1.5"/>
+          <rect x="10" y="10" width="300" height="150" rx="3" fill="none" stroke="#FFE600" stroke-width=".4" opacity=".3"/>
+          <text x="160" y="40" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".55">CERTIFICATE OF COMPLETION</text>
+          <text x="160" y="72" fill="#fff" font-size="17" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="700">Python for Everybody</text>
+          <text x="160" y="95" fill="#FFE600" font-size="9" text-anchor="middle" font-family="monospace" opacity=".65">Dicoding Indonesia</text>
+          <line x1="50" y1="114" x2="270" y2="114" stroke="#FFE600" stroke-width=".5" opacity=".3"/>
+          <text x="160" y="134" fill="#fff" font-size="8.5" text-anchor="middle" font-family="monospace" opacity=".45">Fadhil — 2024</text>
+          <circle cx="36" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="36" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+          <circle cx="284" cy="82" r="16" fill="none" stroke="#FFE600" stroke-width=".8" opacity=".35"/>
+          <text x="284" y="87" fill="#FFE600" font-size="12" text-anchor="middle">✦</text>
+        </svg>
+      </div>
+      <div class="cert-body">
+        <div class="cert-meta"><i class="fab fa-python"></i> Dicoding Indonesia</div>
+        <h4>Python for Everybody</h4>
+        <p>Data structures, functions, APIs, and automation scripting with Python.</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- DASHBOARD -->
+<section id="dashboard" class="sec dash-sec">
+  <div class="sec-eyebrow">— Live Data</div>
+  <h2 class="sec-h">IoT Dashboard</h2>
+  <div class="dash-grid">
+ 
+    <div class="dc sensors-dc">
+      <div class="sensor-row">
+        <div class="sensor-item">
+          <div class="s-ico thermo"><i class="fas fa-thermometer-half"></i></div>
+          <div class="s-info"><span class="s-val" id="tempVal">—</span><span class="s-lbl">Temp</span></div>
+        </div>
+        <div class="sensor-item">
+          <div class="s-ico humid"><i class="fas fa-tint"></i></div>
+          <div class="s-info"><span class="s-val" id="humVal">—</span><span class="s-lbl">Humidity</span></div>
+        </div>
+        <div class="sensor-item">
+          <div class="s-ico soil"><i class="fas fa-seedling"></i></div>
+          <div class="s-info"><span class="s-val" id="soilVal">—</span><span class="s-lbl">Soil</span></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="dc chart-dc">
+      <div class="dc-hd"><span>Sensor Realtime</span><span class="live-tag"><span class="ldot"></span>LIVE</span></div>
+      <canvas id="sensorChart" height="130"></canvas>
+    </div>
+ 
+    <div class="dc server-dc">
+      <div class="dc-hd"><span><i class="fas fa-server"></i> Server</span><span class="srv-badge online" id="serverBadge"><span class="sbdot"></span>Online</span></div>
+      <div class="srv-bars">
+        <div class="srv-row"><span>CPU</span><div class="sbar"><div class="sbar-f" id="cpuBar" style="width:34%"></div></div><span id="cpuPct">34%</span></div>
+        <div class="srv-row"><span>RAM</span><div class="sbar"><div class="sbar-f" id="ramBar" style="width:58%"></div></div><span id="ramPct">58%</span></div>
+        <div class="srv-row"><span>Disk</span><div class="sbar"><div class="sbar-f" id="diskBar" style="width:22%"></div></div><span id="diskPct">22%</span></div>
+      </div>
+    </div>
+ 
+    <div class="dc gh-dc">
+      <div class="dc-hd"><span><i class="fab fa-github"></i> GitHub</span><a href="https://github.com/fadhilstudy" target="_blank" class="gh-ext"><i class="fas fa-arrow-up-right-from-square"></i></a></div>
+      <div class="gh-nums">
+        <div class="gn"><span id="ghRepos">—</span><label>Repos</label></div>
+        <div class="gn"><span id="ghFollowers">—</span><label>Followers</label></div>
+        <div class="gn"><span id="ghFollowing">—</span><label>Following</label></div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact" class="sec contact-sec">
+  <div class="sec-eyebrow">— Get In Touch</div>
+  <h2 class="sec-h">Contact Me</h2>
+  <div class="ct-grid">
+    <div class="ct-info">
+      <p class="ct-copy">Have a project, collab, or just want to talk tech? Drop a message — I respond fast.</p>
+      <div class="socials">
+        <a href="https://wa.me/6285944602135" target="_blank" class="soc wa"><span class="sico"><i class="fab fa-whatsapp"></i></span><div><b>WhatsApp</b><small>+62 859-4460-2135</small></div><i class="fas fa-arrow-right sarr"></i></a>
+        <a href="https://instagram.com/itsdhilstudy" target="_blank" class="soc ig"><span class="sico"><i class="fab fa-instagram"></i></span><div><b>Instagram</b><small>@itsdhilstudy</small></div><i class="fas fa-arrow-right sarr"></i></a>
+        <a href="mailto:oppenfadhil@gmail.com" class="soc em"><span class="sico"><i class="fas fa-envelope"></i></span><div><b>Email</b><small>oppenfadhil@gmail.com</small></div><i class="fas fa-arrow-right sarr"></i></a>
+        <a href="https://www.linkedin.com/in/fadhilstudy-belajar-74b3313a9/" target="_blank" class="soc li"><span class="sico"><i class="fab fa-linkedin-in"></i></span><div><b>LinkedIn</b><small>fadhilstudy-belajar</small></div><i class="fas fa-arrow-right sarr"></i></a>
+      </div>
+    </div>
+    <form id="contactForm" class="cf" novalidate>
+      <div class="cf-g"><label>Nama</label><input type="text" id="nameInput" placeholder="John Doe" required></div>
+      <div class="cf-g"><label>Email</label><input type="email" id="emailInput" placeholder="john@example.com" required></div>
+      <div class="cf-g"><label>Pesan</label><textarea id="msgInput" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+      <button type="submit" class="btn-fill w100" id="submitBtn">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+      <div class="cf-ok" id="cfSuccess"><i class="fas fa-check-circle"></i> Terkirim! Saya akan segera membalas.</div>
+    </form>
+  </div>
+</section>
+ 
+<footer class="footer">
+  <div class="fi">
+    <div class="flogo">F<span>.</span></div>
+    <p>© 2026 Fadhil. Built with obsession &amp; coffee.</p>
+    <div class="flinks">
+      <a href="https://wa.me/6285944602135" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/itsdhilstudy" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:oppenfadhil@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/fadhilstudy-belajar-74b3313a9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+ 
+<!-- MODAL -->
+<div class="m-ov" id="mOv">
+  <div class="m-box" id="mBox">
+    <button class="m-close" id="mClose"><i class="fas fa-times"></i></button>
+    <div id="mContent"></div>
+  </div>
+</div>
+ 
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
